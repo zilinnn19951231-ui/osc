@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 14% 4%;
+    --foreground: 240 10% 94%;
+    --card: 240 12% 7%;
+    --card-foreground: 240 10% 94%;
+    --popover: 240 12% 7%;
+    --popover-foreground: 240 10% 94%;
+    --primary: 163 100% 42%;
+    --primary-foreground: 240 14% 4%;
+    --secondary: 240 8% 11%;
+    --secondary-foreground: 240 10% 94%;
+    --muted: 240 8% 15%;
+    --muted-foreground: 240 8% 45%;
+    --accent: 163 100% 42%;
+    --accent-foreground: 240 14% 4%;
+    --destructive: 348 100% 64%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 8% 15%;
+    --input: 240 8% 10%;
+    --ring: 163 100% 42%;
+    --radius: 0.625rem;
+    --sidebar-background: 240 8% 7%;
+    --sidebar-foreground: 240 8% 70%;
+    --sidebar-primary: 163 100% 42%;
+    --sidebar-primary-foreground: 240 14% 4%;
+    --sidebar-accent: 240 8% 11%;
+    --sidebar-accent-foreground: 240 10% 94%;
+    --sidebar-border: 240 8% 15%;
+    --sidebar-ring: 163 100% 42%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Microsoft JhengHei', 'PingFang TC', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer utilities {
+  .scanline {
+    background: linear-gradient(to bottom, transparent 50%, rgba(0, 212, 170, 0.015) 50%);
+    background-size: 100% 3px;
+  }
+}
